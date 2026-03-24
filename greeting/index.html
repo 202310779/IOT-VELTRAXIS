@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IoT Door Greeting</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="idle-screen" class="screen active">
+    <div class="logo-wrap">
+      <div class="pulse-ring"></div>
+      <div class="logo-icon">🖥️</div>
+    </div>
+    <p class="idle-label">Computer Laboratory</p>
+  </div>
+
+  <div id="greet-screen" class="screen">
+    <div class="greet-content">
+      <div class="wave">👋</div>
+      <h1 class="greet-title">Welcome!</h1>
+      <p class="greet-sub">Welcome to the Computer Laboratory!</p>
+      <p class="greet-event">GDAP Roadshow</p>
+    </div>
+  </div>
+
+  <audio id="greet-audio" src="family.mp3" preload="auto"></audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
